@@ -2,10 +2,10 @@ import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 
 @Injectable()
-export class DBConfigService {
+export class DbConfigService {
   constructor(private readonly config: ConfigService) {}
 
-  get url() {
+  get connectionString() {
     const engine = this.config.get<string>('db.engine');
     const user = this.config.get<string>('db.user');
     const password = this.config.get<string>('db.password');

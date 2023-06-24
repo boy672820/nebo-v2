@@ -1,3 +1,1 @@
-export enum InjectionToken {
-  DRIZZLE = 'DRIZZLE',
-}
+export enum InjectionToken {}

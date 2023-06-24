@@ -1,2 +1,2 @@
-export * from './db.module';
-export * from './db.service';
+export * from './db.config.module';
+export * from './db.config.service';
